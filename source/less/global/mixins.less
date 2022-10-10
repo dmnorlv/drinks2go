@@ -1,0 +1,29 @@
+// Обнуление padding и list-style-type у списков
+.normalize-list() {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+//Доступно cпрятать
+.hide() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.normalize-button() {
+  border: none;
+  padding: 0;
+}
+
+.normalize-link() {
+  text-decoration: none;
+}

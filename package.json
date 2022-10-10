@@ -39,5 +39,10 @@
   "engines": {
     "node": "^16"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "csso": "^5.0.5",
+    "gulp-rename": "^2.0.0",
+    "postcss-csso": "^6.0.1"
+  }
 }

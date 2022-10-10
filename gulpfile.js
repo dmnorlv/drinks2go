@@ -4,8 +4,23 @@ import less from 'gulp-less';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+import csso from 'postcss-csso';
+import rename from 'gulp-rename';
 
 // Styles
+
+// export const styles = () => {
+//   return gulp.src('source/less/style.less', { sourcemaps: true })
+//   .pipe(plumber())
+//   .pipe(less())
+//   .pipe(postcss([
+//   autoprefixer(),
+//   csso()
+//   ]))
+//   .pipe(rename('style.min.css'))
+//   .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
+//   .pipe(browser.stream());
+//   }
 
 export const styles = () => {
   return gulp.src('source/less/style.less', { sourcemaps: true })
@@ -39,6 +54,10 @@ const watcher = () => {
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
+
+// export default gulp.series(clean, copy, copyImages,
+//   gulp.parallel(styles, html, svg, sprite, createWebp),
+//   gulp.series(server, watcher));
 
 export default gulp.series(
   styles, server, watcher
