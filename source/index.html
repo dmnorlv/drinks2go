@@ -18,10 +18,8 @@
   <header class="index__header header">
     <a class="header__logo" href="#">
       <picture>
-        <source media="(min-width: 1440px)"
-          srcset="img/logo-desktop.svg">
-        <source media="(min-width: 768px)"
-          srcset="img/logo-tablet.svg">
+        <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
         <img src="img/logo-small.svg" alt="Логотип компании.">
       </picture>
     </a>
@@ -29,7 +27,7 @@
       Интернет-магазин кофейных напитков
     </h1>
     <nav class="header__nav menu">
-      <ul class="menu__main menu-list menu__main--js">
+      <ul class="menu__main menu-list">
         <li class="menu-list__item">
           <a class="menu-list__link menu-list__link--current" href="#">Главная</a>
         </li>
@@ -63,7 +61,7 @@
       </ul>
     </nav>
 
-    <button class="header__button header__button--js" type="button">
+    <button class="header__button" type="button">
       <!-- <svg class="header__button-icon" width="12" height="12">
         <use xlink:href="img/sprite.svg#icon-cross"></use>
       </svg> -->
@@ -72,45 +70,48 @@
   </header>
 
   <main class="index__main main-index">
-    <section class="slider main-index__slider">
-      <h2 class="visually-hidden">Промо блок.</h2>
+    <div class="slider__wrapper">
+      <section class="slider main-index__slider">
+        <h2 class="visually-hidden">Промо блок.</h2>
 
-      <div class="slider__slide slide">
-        <div class="slide__wrapper">
-          <span class="slide__special-slogan">Новинка!</span>
-          <h3 class="slide__title slide__title--new">Декаф Флэт Уайт</h3>
-          <p class="slide__description">
-            Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня
-          </p>
+        <div class="slider__slide content">
+          <div class="content__wrapper">
+            <span class="content__special-slogan">Новинка!</span>
+            <h3 class="content__title content__title--new">Декаф Флэт Уайт</h3>
+            <p class="content__description">
+              Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для
+              расслабления после тяжёлого рабочего дня
+            </p>
 
-          <div class="slide__price-wrapper">
-            <span class="slide__old-price">295₽</span>
-            <span class="slide__price">225₽</span>
-            <button class="slider__button" type="button">Заказать</button>
+            <div class="content__price-wrapper">
+              <span class="content__old-price">295₽</span>
+              <span class="content__price">225₽</span>
+              <button class="slider__button" type="button">Заказать</button>
+            </div>
+
           </div>
 
+          <img class="content__img" src="img/slider/slider-img-mobile.png" width="280" height="280"
+            alt="Изображение товара.">
         </div>
 
-        <img class="slide__img" src="img/slider/slider-img-mobile.png" width="280" height="280" alt="Изображение товара.">
+        <div class="slider__toggles toggles">
+          <button class="toggles__button" type="button">
+            <svg class="toggles__arrow-left" width="11" height="20">
+              <use xlink:href="img/sprite.svg#slider-toggle-left"></use>
+            </svg>
+          </button>
+          <button class="toggles__button" type="button">
+            <svg class="toggles__arrow-right" width="11" height="20">
+              <use xlink:href="img/sprite.svg#slider-toggle-right"></use>
+            </svg>
+          </button>
+        </div>
 
-      </div>
+        <div class="slider__pagination"></div>
 
-      <div class="slider__toggles toggles">
-        <button class="toggles__button" type="button">
-          <svg class="toggles__arrow-left" width="11" height="20">
-            <use xlink:href="img/sprite.svg#slider-toggle-left"></use>
-          </svg>
-        </button>
-        <button class="toggles__button" type="button">
-          <svg class="toggles__arrow-right" width="11" height="20">
-            <use xlink:href="img/sprite.svg#slider-toggle-right"></use>
-          </svg>
-        </button>
-      </div>
-
-
-
-    </section>
+      </section>
+    </div>
   </main>
 
   <footer class="index__footer footer">
