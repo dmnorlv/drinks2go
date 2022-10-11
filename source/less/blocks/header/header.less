@@ -3,10 +3,18 @@
   display: flex;
   min-height: 60px;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    min-height: 80px;
+  }
 }
 
 .header__logo {
   margin-left: 20px;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 40px;
+  }
 }
 
 .header__logo img {
@@ -26,20 +34,53 @@
 }
 
 .header__title {
-  @media (max-width: 1199px) {
+  @media (max-width: 1439px) {
     .hide();
   }
+
+
   font-size: 12px;
   line-height: 16px;
+  font-weight: 400;
+  width: 126px;
+  margin: 0;
+  margin-left: 22px;
 }
 
 .header__nav {
+
   width: 120px;
-  margin-left: 88px;
+  margin-left: auto;
+
+
+  @media (min-width: @tablet-width) {
+    width: 579px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 882px;
+  }
 }
 
 .header__button {
   .normalize-button();
   width: 60px;
+  min-height: 60px;
   background-color: inherit;
+  background-image: url("../img/icon-cross.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.header__button:active {
+  background-color: #f0ebff;
+}
+
+.header__button--js {
+  background-image: url("../img/icon-menu.svg");
 }

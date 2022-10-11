@@ -8,4 +8,46 @@
 
 .menu-list__link {
   .normalize-link();
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #f0ebff;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    padding: 32px 20px;
+
+    &:hover {
+      color: #7859cf;
+    }
+
+    &:focus {
+      color: #7859cf;
+      outline: none;
+    }
+
+    &:active {
+      color: #7859cf;
+      background-color: #f0ebff;
+    }
+  }
+
+  &--current {
+    @media (min-width: @tablet-width) {
+      box-shadow: inset 0 -2.3px 0 0 #7859cf;
+      color: #7859cf;
+    }
+  }
+
+  &--last {
+    border-bottom: 1px solid #f0ebff;
+
+    @media (min-width: @tablet-width) {
+      border: none;
+    }
+  }
 }

@@ -9,4 +9,15 @@
 .index__header {
   width: 320px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    box-sizing: border-box;
+    padding-right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    padding-right: 40px;
+  }
 }

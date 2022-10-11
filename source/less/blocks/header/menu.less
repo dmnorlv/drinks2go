@@ -3,15 +3,46 @@
 }
 
 .menu__main {
-  position: absolute;
-  top: 60px;
-  left: 0;
   .normalize-list();
 
+  @media (max-width: @mobile-width-only) {
+    position: absolute;
+    top: 61px;
+    left: 0;
+    width: 320px;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 399px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 459px;
+  }
+
+}
+
+.menu__main--js {
+  @media (max-width: @mobile-width-only) {
+    .hide();
+  }
 }
 
 .menu__user {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 120px;
   .normalize-list();
+
+  @media (min-width: @tablet-width) {
+    margin-left: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 261px;
+    justify-content: space-between;
+  }
 }
