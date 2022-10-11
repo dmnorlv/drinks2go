@@ -10,4 +10,12 @@
   <symbol viewBox="0 0 12 12" id="icon-cross">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M5.02548 6L0 0.974524L0.974524 0L6 5.02548L11.0255 0L12 0.974524L6.97452 6L12 11.0255L11.0255 12L6 6.97452L0.974524 12L0 11.0255L5.02548 6Z" fill="#333333"/>
   </symbol>
+
+  <symbol viewBox="0 0 11 20" id="slider-toggle-left">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.71661 0L11 1.32082L2.56677 10L11 18.6792L9.71661 20L0 10L9.71661 0Z" fill="#7859CF"/>
+  </symbol>
+
+  <symbol viewBox="0 0 11 20" id="slider-toggle-right">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.28339 0L0 1.32082L8.43323 10L0 18.6792L1.28339 20L11 10L1.28339 0Z" fill="#7859CF"/>
+  </symbol>
 </svg>
