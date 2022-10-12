@@ -5,6 +5,14 @@
 .slider__slide {
   padding-bottom: 60px;
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 308px;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .slider__slide--1 {
@@ -20,6 +28,7 @@
 }
 
 .slider__toggles {
+  height: 100%;
   width: 320px;
   display: flex;
   justify-content: space-between;
@@ -28,13 +37,27 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+  }
 }
 
 .slider__button {
-  .normalize-button();
+  .normalize-link();
   padding: 8px 20px;
   background-color: #7859cf;
   border-radius: 4px;
   color: #ffffff;
   margin-left: 20px;
+}
+
+.slider__pagination {
+  @media (max-width: 1439px) {
+    display: none;
+  }
 }

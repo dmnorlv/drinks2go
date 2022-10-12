@@ -1,0 +1,30 @@
+.pagination {
+
+}
+
+.pagination__item {
+
+}
+
+.pagination__button {
+  .normalize-button();
+  width: 62px;
+  height: 4px;
+  padding: 20px 0;
+  position: relative;
+  background-color: inherit;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.pagination__button::after {
+  position: absolute;
+  content: "";
+  width: 62px;
+  height: 4px;
+  background-color: #7859cf;
+  left: 0;
+  top: 50%;
+}

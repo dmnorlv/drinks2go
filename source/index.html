@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Кофейные напитки Drinks2Go">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="swiper/swiper.min.css">
+  <link rel="stylesheet" href="swiper/swiper-bundle.css">
   <link rel="icon" href="favicon.ico">
   <link rel="preload" href="fonts/montserrat-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -76,70 +76,110 @@
         <h2 class="visually-hidden">Промо блок.</h2>
         <div class="swiper">
           <div class="swiper-wrapper">
-            <div class="slider__slide slider__slide--1 content swiper-slide">
-              <div class="content__wrapper">
-                <span class="content__special-slogan">Новинка!</span>
-                <h3 class="content__title content__title--new">Декаф Флэт Уайт</h3>
-                <p class="content__description">
-                  Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для
-                  расслабления после тяжёлого рабочего дня
-                </p>
+            <div class="slider__slide slider__slide--1  swiper-slide">
+              <div class="content">
+                <div class="content__wrapper">
+                  <span class="content__special-slogan">Новинка!</span>
+                  <h3 class="content__title">Декаф Флэт Уайт</h3>
+                  <p class="content__description">
+                    Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для
+                    расслабления после тяжёлого рабочего дня
+                  </p>
 
-                <div class="content__price-wrapper">
-                  <span class="content__old-price">295₽</span>
-                  <span class="content__price">225₽</span>
-                  <button class="slider__button" type="button">Заказать</button>
+                  <div class="content__price-wrapper">
+                    <span class="content__old-price">295₽</span>
+                    <span class="content__price">225₽</span>
+                    <a class="slider__button" href="#buy">Заказать</a>
+                  </div>
+
                 </div>
+                <picture class="content__img">
+                  <source type="img/webp" media="(min-width: 1440px)"
+                    srcset="img/slider/flat-white-desktop-x1.webp 1x, img/slider/flat-white-desktop-x2.webp 2x">
+                  <source type="img/webp" media="(min-width: 768px)"
+                    srcset="img/slider/flat-white-tablet-x1.webp 1x, img/slider/flat-white-tablet-x2.webp 2x">
+                  <source type="img/webp"
+                    srcset="img/slider/flat-white-mobile.webp 1x, img/slider/flat-white-mobile-x2.webp 2x">
 
+                  <source media="(min-width: 1440px)"
+                    srcset="img/slider/flat-white-desktop-x1.png 1x, img/slider/flat-white-desktop-x2.png 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/slider/flat-white-tablet-x1.png 1x, img/slider/flat-white-tablet-x2.png 2x">
+                  <img src="img/slider/flat-white-mobile.png" width="280" height="280"
+                    srcset="img/slider/flat-white-mobile-x2.png 2x" alt="Жестяная банка Флэт Уайт.">
+                </picture>
               </div>
-
-              <img class="content__img" src="img/slider/flat-white-mobile.png" width="280" height="280"
-                alt="Изображение товара.">
             </div>
             <div class="slider__slide slider__slide--2 content swiper-slide">
               <div class="content__wrapper">
                 <span class="content__special-slogan">Новинка!</span>
                 <h3 class="content__title content__title--new">Лавандовый Латте</h3>
                 <p class="content__description">
-                  Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор
+                  Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас
+                  прямо на вершину Радужных гор
                 </p>
 
                 <div class="content__price-wrapper">
                   <span class="content__old-price">285₽</span>
                   <span class="content__price">265₽</span>
-                  <button class="slider__button" type="button">Заказать</button>
+                  <a class="slider__button" href="#buy">Заказать</a>
                 </div>
 
               </div>
+              <picture class="content__img">
+                <source type="img/webp" media="(min-width: 1440px)"
+                  srcset="img/slider/lavender-desktop-1x.webp 1x, img/slider/lavender-desktop-2x.webp 2x">
+                <source type="img/webp" media="(min-width: 768px)"
+                  srcset="img/slider/lavender-tablet-1x.webp 1x, img/slider/lavender-tablet-2x.webp 2x">
+                <source type="img/webp"
+                  srcset="img/slider/lavender-mobile.webp 1x, img/slider/lavender-mobile-2x.webp 2x">
 
-              <img class="content__img" src="img/slider/lavender-mobile.png" width="280" height="280"
-                alt="Изображение товара.">
+                <source media="(min-width: 1440px)"
+                  srcset="img/slider/lavender-desktop-1x.png 1x, img/slider/lavender-desktop-2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/slider/lavender-tablet-1x.png 1x, img/slider/lavender-tablet-2x.png 2x">
+                <img src="img/slider/lavender-mobile.png" width="280" height="280"
+                  srcset="img/slider/lavender-mobile-2x.png 2x" alt="Жестяная банка Лавандовый Латте.">
+              </picture>
             </div>
             <div class="slider__slide slider__slide--3 content swiper-slide">
               <div class="content__wrapper">
                 <span class="content__special-slogan">Новинка!</span>
                 <h3 class="content__title content__title--new">Тройной Эспрессо</h3>
                 <p class="content__description">
-                  Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость
+                  Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что
+                  такое настоящая бодрость
                 </p>
 
                 <div class="content__price-wrapper">
                   <span class="content__old-price">395₽</span>
                   <span class="content__price">375₽</span>
-                  <button class="slider__button" type="button">Заказать</button>
+                  <a class="slider__button" href="#buy">Заказать</a>
                 </div>
 
               </div>
+              <picture class="content__img">
+                <source type="img/webp" media="(min-width: 1440px)"
+                  srcset="img/slider/espresso-desktop-1x.webp 1x, img/slider/espresso-desktop-2x.webp 2x">
+                <source type="img/webp" media="(min-width: 768px)"
+                  srcset="img/slider/espresso-tablet-1x.webp 1x, img/slider/espresso-tablet-2x.webp 2x">
+                <source type="img/webp"
+                  srcset="img/slider/espresso-mobile.webp 1x, img/slider/espresso-mobile-2x.webp 2x">
 
-              <img class="content__img" src="img/slider/espresso-mobile.png" width="280" height="280"
-                alt="Изображение товара.">
+                <source media="(min-width: 1440px)"
+                  srcset="img/slider/espresso-desktop-1x.png 1x, img/slider/espresso-desktop-2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/slider/espresso-tablet-1x.png 1x, img/slider/espresso-tablet-2x.png 2x">
+                <img src="img/slider/espresso-mobile.png" width="280" height="280"
+                  srcset="img/slider/espresso-mobile-2x.png 2x" alt="Жестяная банка Тройной Эспрессо.">
+              </picture>
             </div>
           </div>
           <!-- <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div> -->
 
 
-          <div class="slider__toggles toggles">
+          <!-- <div class="slider__toggles toggles"> -->
             <button class="toggles__button toggles__button--prev swiper-button-prev" type="button">
               <svg class="toggles__arrow-left" width="11" height="20">
                 <use xlink:href="img/sprite.svg#slider-toggle-left"></use>
@@ -150,11 +190,62 @@
                 <use xlink:href="img/sprite.svg#slider-toggle-right"></use>
               </svg>
             </button>
-          </div>
+          <!-- </div> -->
+          <div class="slider__pagination swiper-pagination">
 
-          <div class="slider__pagination"></div>
+          </div>
+          <!-- <ol class="slider__pagination pagination">
+            <li class="pagination__item swiper-pagination-bullet">
+              <button class="pagination__button" type="button">
+                <span class="visually-hidden">Первый слайд</span>
+              </button>
+            </li>
+            <li class="pagination__item swiper-pagination-bullet">
+              <button class="pagination__button" type="button">
+                <span class="visually-hidden">Второй слайд</span>
+              </button>
+            </li>
+            <li class="pagination__item swiper-pagination-bullet">
+              <button class="pagination__button" type="button">
+                <span class="visually-hidden">Третий слайд</span>
+              </button>
+            </li>
+          </ol> -->
         </div>
       </section>
+    </div>
+
+    <section class="advantages main-index__advantages">
+      <div class="advantages__wrapper">
+        <h2 class="advantages__title">Преимущества</h2>
+        <div class="advantages__slogan">Главные причины выбрать Drink2Go</div>
+        <ul class="advantages__list benefits">
+          <li class="benefits__item">
+            <h3 class="benefits__title">Скорость</h3>
+            <p class="benefits__description">
+              Готовый напиток всегда под рукой — просто открой банку
+            </p>
+          </li>
+          <li class="benefits__item">
+            <h3 class="benefits__title">Удобство</h3>
+            <p class="benefits__description">
+              Легко помещается и в карман, и в маленькую сумочку
+            </p>
+          </li>
+          <li class="benefits__item">
+            <h3 class="benefits__title">Бодрость</h3>
+            <p class="benefits__description">
+              Сбалансированная доза кофеина даст мощный заряд энергии
+            </p>
+          </li>
+          <li class="benefits__item">
+            <h3 class="benefits__title"> Экологичность</h3>
+            <p class="benefits__description">
+              Вся упаковка сделана из перерабатываемых материалов
+            </p>
+          </li>
+        </ul>
+    </section>
     </div>
   </main>
 
