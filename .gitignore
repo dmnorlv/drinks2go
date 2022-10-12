@@ -11,4 +11,6 @@ build/
 npm-debug.*
 source/css/*.css
 source/css/*.map
+source/swiper
+
 Thumbs.db

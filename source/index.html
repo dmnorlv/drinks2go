@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Кофейные напитки Drinks2Go">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="swiper/swiper.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="preload" href="fonts/montserrat-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -73,43 +74,86 @@
     <div class="slider__wrapper">
       <section class="slider main-index__slider">
         <h2 class="visually-hidden">Промо блок.</h2>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="slider__slide slider__slide--1 content swiper-slide">
+              <div class="content__wrapper">
+                <span class="content__special-slogan">Новинка!</span>
+                <h3 class="content__title content__title--new">Декаф Флэт Уайт</h3>
+                <p class="content__description">
+                  Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для
+                  расслабления после тяжёлого рабочего дня
+                </p>
 
-        <div class="slider__slide content">
-          <div class="content__wrapper">
-            <span class="content__special-slogan">Новинка!</span>
-            <h3 class="content__title content__title--new">Декаф Флэт Уайт</h3>
-            <p class="content__description">
-              Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для
-              расслабления после тяжёлого рабочего дня
-            </p>
+                <div class="content__price-wrapper">
+                  <span class="content__old-price">295₽</span>
+                  <span class="content__price">225₽</span>
+                  <button class="slider__button" type="button">Заказать</button>
+                </div>
 
-            <div class="content__price-wrapper">
-              <span class="content__old-price">295₽</span>
-              <span class="content__price">225₽</span>
-              <button class="slider__button" type="button">Заказать</button>
+              </div>
+
+              <img class="content__img" src="img/slider/flat-white-mobile.png" width="280" height="280"
+                alt="Изображение товара.">
             </div>
+            <div class="slider__slide slider__slide--2 content swiper-slide">
+              <div class="content__wrapper">
+                <span class="content__special-slogan">Новинка!</span>
+                <h3 class="content__title content__title--new">Лавандовый Латте</h3>
+                <p class="content__description">
+                  Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор
+                </p>
 
+                <div class="content__price-wrapper">
+                  <span class="content__old-price">285₽</span>
+                  <span class="content__price">265₽</span>
+                  <button class="slider__button" type="button">Заказать</button>
+                </div>
+
+              </div>
+
+              <img class="content__img" src="img/slider/lavender-mobile.png" width="280" height="280"
+                alt="Изображение товара.">
+            </div>
+            <div class="slider__slide slider__slide--3 content swiper-slide">
+              <div class="content__wrapper">
+                <span class="content__special-slogan">Новинка!</span>
+                <h3 class="content__title content__title--new">Тройной Эспрессо</h3>
+                <p class="content__description">
+                  Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость
+                </p>
+
+                <div class="content__price-wrapper">
+                  <span class="content__old-price">395₽</span>
+                  <span class="content__price">375₽</span>
+                  <button class="slider__button" type="button">Заказать</button>
+                </div>
+
+              </div>
+
+              <img class="content__img" src="img/slider/espresso-mobile.png" width="280" height="280"
+                alt="Изображение товара.">
+            </div>
+          </div>
+          <!-- <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> -->
+
+
+          <div class="slider__toggles toggles">
+            <button class="toggles__button toggles__button--prev swiper-button-prev" type="button">
+              <svg class="toggles__arrow-left" width="11" height="20">
+                <use xlink:href="img/sprite.svg#slider-toggle-left"></use>
+              </svg>
+            </button>
+            <button class="toggles__button toggles__button--next swiper-button-next" type="button">
+              <svg class="toggles__arrow-right" width="11" height="20">
+                <use xlink:href="img/sprite.svg#slider-toggle-right"></use>
+              </svg>
+            </button>
           </div>
 
-          <img class="content__img" src="img/slider/slider-img-mobile.png" width="280" height="280"
-            alt="Изображение товара.">
+          <div class="slider__pagination"></div>
         </div>
-
-        <div class="slider__toggles toggles">
-          <button class="toggles__button" type="button">
-            <svg class="toggles__arrow-left" width="11" height="20">
-              <use xlink:href="img/sprite.svg#slider-toggle-left"></use>
-            </svg>
-          </button>
-          <button class="toggles__button" type="button">
-            <svg class="toggles__arrow-right" width="11" height="20">
-              <use xlink:href="img/sprite.svg#slider-toggle-right"></use>
-            </svg>
-          </button>
-        </div>
-
-        <div class="slider__pagination"></div>
-
       </section>
     </div>
   </main>
@@ -119,6 +163,7 @@
   </footer>
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="js/main.js" type="module"></script>
 
 </html>
