@@ -28,12 +28,11 @@
 }
 
 .slider__toggles {
-  height: 100%;
   width: 320px;
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  z-index: 10;
+  // display: flex;
+  // justify-content: space-between;
+  position: relative;
+  z-index: 1;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -49,11 +48,9 @@
 
 .slider__button {
   .normalize-link();
-  padding: 8px 20px;
-  background-color: #7859cf;
-  border-radius: 4px;
-  color: #ffffff;
   margin-left: 20px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .slider__pagination {
