@@ -3,13 +3,99 @@
 }
 
 .benefits__item {
+  padding-top: 66px;
+  position: relative;
 
+  @media (min-width: @tablet-width) {
+    width: 339px;
+    padding: 0;
+    padding-left: 72px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 317px;
+    padding: 0;
+    padding-top: 76px;
+  }
+}
+
+.benefits__item:not(:last-child) {
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 32px;
+  }
+}
+
+.benefits__item::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  width: 52px;
+  height: 56px;
+
+  @media (min-width: @tablet-width) {
+    top: 4px;
+    left: 27px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+  }
+}
+
+.benefits__item--speed::after {
+  background-image: url("../img/advantages/speed.svg");
+}
+
+.benefits__item--comfort::after {
+  background-image: url("../img/advantages/comfort.svg");
+}
+
+.benefits__item--courage::after {
+  background-image: url("../img/advantages/courage.svg");
+}
+
+.benefits__item--eco::after {
+  background-image: url("../img/advantages/eco.svg");
 }
 
 .benefits__title {
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 4px;
 
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+  }
 }
 
 .benefits__description {
+  margin: 0;
+  text-align: center;
+  width: 280px;
 
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    width: 267px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+    width: auto;
+  }
 }

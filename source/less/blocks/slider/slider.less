@@ -11,7 +11,8 @@
   }
 
   @media (min-width: @desktop-width) {
-
+    padding-bottom: 84px;
+    padding-top: 30px;
   }
 }
 
@@ -53,8 +54,24 @@
   line-height: 24px;
 }
 
+.slider__pagination-wrapper {
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 .slider__pagination {
   @media (max-width: 1439px) {
     display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    bottom: 9.7%;
+    left: 43%;
   }
 }
