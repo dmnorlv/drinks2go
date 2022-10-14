@@ -1,0 +1,143 @@
+.price-range {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-range__wrapper {
+  width: 280px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.price-range__wrapper::after {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 2px;
+  background-color: #e2e2e2;
+  top: 50%;
+  transform: translate(-50%);
+  left: 140px;
+}
+
+.price-range__scale {
+  width: 256px;
+  height: 4px;
+  background-color: #9070ec;
+  position: relative;
+  z-index: 1;
+}
+
+.price-range__scale--disabled {
+  background-color: #bdbdbd;
+}
+
+.price-range__toggle {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #9070ec;
+  box-sizing: border-box;
+  bottom: -10px;
+  left: 0;
+  z-index: 2;
+}
+
+.price-range__toggle:disabled {
+  background-color: #f8f8f8;
+  border-color: #bdbdbd;
+  cursor: default;
+}
+
+.price-range__toggle:disabled:hover > .price-range__decor-circle {
+  display: none;
+}
+
+.price-range__decor-circle {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: rgba(120, 89, 207, 0.25);
+  top: 2px;
+  left: 2px;
+  display: none;
+}
+
+.price-range__toggle:hover > .price-range__decor-circle {
+  display: block;
+}
+
+.price-range__toggle:focus {
+  outline: none;
+}
+
+.price-range__toggle:focus > .price-range__decor-circle {
+  display: block;
+}
+
+.price-range__toggle:active > .price-range__decor-circle {
+  background-color: #7859cf;
+}
+
+.price-range__toggle--max {
+  left: 238px;
+}
+
+.price-range__wrapper-inputs {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.price-range__wrapper-inputs::after {
+  content: "";
+  width: 7px;
+  height: 2px;
+  background-color: #bdbdbd;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.price-range__input {
+  border: 2px solid #9070ec;
+  border-radius: 4px;
+  width: 117.99px;
+  padding: 6px 8px;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: @black-3;
+  appearance: none;
+}
+
+.price-range__input:focus {
+  outline: none;
+  border-color: #593cac;
+}
+
+.price-range__input:disabled {
+  background-color: #f8f8f8;
+  border-color: rgb(226, 226, 226);
+}
+
+
+.price-range__input::-webkit-outer-spin-button,
+.price-range__input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.price-range__input::placeholder {
+  color: #bdbdbd;
+}

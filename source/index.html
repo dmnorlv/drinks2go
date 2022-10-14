@@ -10,6 +10,7 @@
   <link rel="icon" href="favicon.ico">
   <link rel="preload" href="fonts/montserrat-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <title>Drinks2Go</title>
 </head>
@@ -257,56 +258,136 @@
 
     <section class="main-index__catalog catalog">
       <div class="catalog__wrapper">
+        <h2 class="catalog__title">Каталог</h2>
+        <div class="catalog__slogan">Каталог кофейных напитков</div>
         <form class="catalog__form form" action="">
-          <fieldset class="form__price price-range">
-            <legend class="price-range__title">Цена</legend>
-            <div class="price-range__range">
+          <fieldset class="form__group form__group--price">
+            <legend class="form__group-title">Цена</legend>
+            <div class="price-range">
               <div class="price-range__wrapper">
-                <div class="price-range__scale">
-                  <div class="price-range__bar">
-                    <button type="button" class="price-range__toggle price-range-toggle-min">
-                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                <div class="price-range__scale price-range__scale--disabled">
+                  <!-- <div class="price-range__bar"> -->
+                  <button class="price-range__toggle price-range__toggle--min" type="button" disabled>
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                    <span class="price-range__decor-circle"></span>
+                  </button>
+                  <button class="price-range__toggle price-range__toggle--max" type="button">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                    <span class="price-range__decor-circle"></span>
+                  </button>
 
-                      <span class="price-range__decor-circle"></span>
-
-                    </button>
-                    <button type="button" class="price-range__toggle price-range-toggle-max">
-                      <span class="visually-hidden">Изменить максимальную цену.</span>
-
-                      <span class="price-range__decor-circle"></span>
-
-                    </button>
-
-                  </div>
+                  <!-- </div> -->
                 </div>
               </div>
-              <div class="price-range__wrapper-inputs price-inputs">
-                <label class="price-inputs__label">
-                  <input class="range-input range-input-min" type="number" value="0" name="min-price">
+              <div class="price-range__wrapper-inputs">
+                <label class="price-range__label">
+                  <input class="price-range__input price-range__input--min" disabled type="number" placeholder="0"
+                    name="min-price">
                 </label>
-                <label class="price-inputs__label">
-                  <input class="range-input range-input-max" type="number" value="900" name="max-price">
+                <label class="price-range__label">
+                  <input class="price-range__input price-range__input--max" type="number" value="900" name="max-price">
                 </label>
               </div>
             </div>
           </fieldset>
 
-          <fieldset class="form__product-type">
+          <fieldset class="form__group form__product-type">
+            <legend class="form__group-title">Наличие молока</legend>
+            <ul class="form__product-type-list">
+              <li class="form__product-type-item">
+                <label class="form__product-type-choice radiobutton">
+                  <input class="radiobutton__input visually-hidden" type="radio" name="milk-type" value="any">
+                  <span class="radiobutton__mark"></span>
+                  <span class="radiobutton__label">Неважно</span>
+                </label>
+              </li>
+              <li class="form__product-type-item">
+                <label class="form__product-type-choice radiobutton">
+                  <input class="radiobutton__input visually-hidden" type="radio" name="milk-type" value="animal">
+                  <span class="radiobutton__mark"></span>
+                  <span class="radiobutton__label">Только животное</span>
+                </label>
+              </li>
+              <li class="form__product-type-item">
+                <label class="form__product-type-choice radiobutton">
+                  <input class="radiobutton__input visually-hidden" type="radio" name="milk-type" value="vegan">
+                  <span class="radiobutton__mark"></span>
+                  <span class="radiobutton__label">Только растительное</span>
+                </label>
+              </li>
+              <li class="form__product-type-item">
+                <label class="form__product-type-choice radiobutton">
+                  <input class="radiobutton__input visually-hidden" disabled type="radio" name="milk-type" value="not">
+                  <span class="radiobutton__mark"></span>
+                  <span class="radiobutton__label">Без молока</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
 
+          <fieldset class="form__group form__group--country">
+            <legend class="form__group-title">Страна произрастания</legend>
+            <ul class="form__country-list">
+              <li class="form__country-item">
+                <label class="form__country-choice checkboxbutton">
+                  <input class="checkboxbutton__input visually-hidden" type="checkbox" name="brazil">
+                  <span class="checkboxbutton__mark"></span>
+                  <span class="checkboxbutton__label">Бразилия</span>
+                </label>
+              </li>
+              <li class="form__country-item">
+                <label class="form__country-choice checkboxbutton">
+                  <input class="checkboxbutton__input visually-hidden" type="checkbox" name="brazil">
+                  <span class="checkboxbutton__mark"></span>
+                  <span class="checkboxbutton__label">Эфиопия</span>
+                </label>
+              </li>
+              <li class="form__country-item">
+                <label class="form__country-choice checkboxbutton">
+                  <input class="checkboxbutton__input visually-hidden" type="checkbox" name="brazil">
+                  <span class="checkboxbutton__mark"></span>
+                  <span class="checkboxbutton__label">Колумбия</span>
+                </label>
+              </li>
+              <li class="form__country-item">
+                <label class="form__country-choice checkboxbutton">
+                  <input class="checkboxbutton__input visually-hidden" type="checkbox" name="brazil">
+                  <span class="checkboxbutton__mark"></span>
+                  <span class="checkboxbutton__label">Коста-Рика</span>
+                </label>
+              </li>
+              <li class="form__country-item">
+                <label class="form__country-choice checkboxbutton">
+                  <input class="checkboxbutton__input visually-hidden" disabled type="checkbox" name="brazil">
+                  <span class="checkboxbutton__mark"></span>
+                  <span class="checkboxbutton__label">Перу</span>
+                </label>
+              </li>
+            </ul>
           </fieldset>
-          <fieldset class="form__product-country">
 
+          <fieldset class="form__group form__group--buttons filter-buttons">
+            <div class="filter-buttons__wrapper">
+              <button class="filter-buttons__button button" type="button">Применить фильтр</button>
+              <button class="filter-buttons__button button button--secondary" type="button">Сбросить фильтр</button>
+            </div>
           </fieldset>
-          <fieldset class="form__filter-buttons filter-buttons">
-            <button class="filter-buttons__button"></button>
-            <button class="filter-buttons__button"></button>
-          </fieldset>
-          <fieldset class="form__filter-select">
 
+          <fieldset class="form__group form__filter-select">
+            <div class="form__select-wrapper">
+              <legend class="form__group-title form__group-title--select">Сортировка:</legend>
+              <select class="form__select" name="select">
+                <option value="default">по умолчанию</option>
+                <option value="hight-price">сначала дорогие</option>
+                <option value="low-price">сначала дешевые</option>
+                <option value="hight-rate">высокий рейтинг</option>
+              </select>
+            </div>
           </fieldset>
+
         </form>
-        <ul class="catalog__list products-list">
-          <li class="products-list__item product-card">
+        <ul class="catalog__list">
+          <li class="catalog__item product-card">
             <picture class="product-card__img">
               <source type="img/webp" srcset="img/catalog/img-1-1x.webp 1x, img/catalog/img-1-2x.webp 2x">
               <img src="img/catalog/img-1-1x.jpg" srcset="img/catalog/img-1-2x.jpg 2x" alt="Жестяная банка Флэт Уайт.">
