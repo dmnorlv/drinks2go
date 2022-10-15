@@ -4,10 +4,24 @@
   row-gap: 24.5px;
   width: 160px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 315.66px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 318px;
+  }
 }
 
 .filter-buttons__button {
   font-size: 13px;
   line-height: 24px;
   padding: 10.6px 14.5px;
+
+  @media (min-width: @tablet-width) {
+    padding: 8px 5.55px;
+  }
 }

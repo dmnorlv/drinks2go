@@ -10,6 +10,14 @@
   align-items: center;
   position: relative;
   margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    width: 219.98px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 318px;
+  }
 }
 
 .price-range__wrapper::after {
@@ -20,7 +28,15 @@
   background-color: #e2e2e2;
   top: 50%;
   transform: translate(-50%);
-  left: 140px;
+  left: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 219.98px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 318px;
+  }
 }
 
 .price-range__scale {
@@ -29,6 +45,10 @@
   background-color: #9070ec;
   position: relative;
   z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    width: 193px;
+  }
 }
 
 .price-range__scale--disabled {
@@ -89,6 +109,10 @@
 
 .price-range__toggle--max {
   left: 238px;
+
+  @media (min-width: @tablet-width) {
+    left: 180px;
+  }
 }
 
 .price-range__wrapper-inputs {
@@ -120,6 +144,14 @@
   text-align: center;
   color: @black-3;
   appearance: none;
+
+  @media (min-width: @tablet-width) {
+    width: 92.7px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 134px;
+  }
 }
 
 .price-range__input:focus {
