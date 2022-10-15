@@ -1,0 +1,38 @@
+.catalog-pagination__link--page-prev {
+  background-image: url("../img/catalog/icon-pagination-prev.svg");
+}
+
+.catalog-pagination__link--page-next {
+  background-image: url("../img/catalog/icon-pagination-next.svg");
+}
+
+.catalog-pagination__list {
+  .normalize-list();
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-pagination__item {
+
+}
+
+.catalog-pagination__link {
+  .normalize-link();
+  // font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7859CF;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+  width: 40px;
+  padding: 8px;
+}
+
+.catalog-pagination__link--current {
+  background-color: inherit;
+  font-weight: 600;
+  color: @black-3;
+}
