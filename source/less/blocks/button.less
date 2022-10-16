@@ -7,7 +7,37 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.button:hover,
+.button:focus {
+  background-color: #9070ec;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: #593cac;
+}
+
+.button:disabled {
+  background-color: #bdbdbd;
+}
+
 .button--secondary {
   background-color: #ffffff;
   color: #7859cf;
+}
+
+.button--secondary:hover,
+.button--secondary:focus {
+  background-color: #9070ec;
+  color: #ffffff;
+}
+
+.button--secondary:active {
+  background-color: #593cac;
+  color: #ffffff;
+}
+
+.button--secondary:disabled {
+  background-color: #e2e2e2;
+  color: #ffffff;
 }

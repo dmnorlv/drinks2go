@@ -19,17 +19,45 @@
   padding: 22px;
   color: @black-3;
 
+  @media (min-width: @tablet-width) {
+    padding: 32px 22px;
+  }
+
   @media (min-width: @desktop-width) {
     padding: 32px 20px;
     align-items: center;
   }
+}
+
+.user-list__login-icon,
+.user-list__cart-icon {
+  fill: @black-3;
+}
+
+.user-list__link:hover,
+.user-list__link:focus {
+  color: #7859cf;
+}
+
+.user-list__link:hover > .user-list__login-icon,
+.user-list__link:focus > .user-list__login-icon,
+.user-list__link:hover > .user-list__cart-icon,
+.user-list__link:focus > .user-list__cart-icon {
+  @media (min-width: @desktop-width) {
+    fill: #7859cf;
+  }
+}
+
+.user-list__link:active {
+  background-color: #f0ebff;
+}
+
 
   // width: 60px;
   // height: 60px;
   // box-sizing: border-box;
   // background-repeat: no-repeat;
   // background-position: center;
-}
 
 .user-list__link--login {
   // background-image: url("../img/icon-login.svg");

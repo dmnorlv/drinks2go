@@ -377,7 +377,7 @@
               <fieldset class="form__group form__group--buttons filter-buttons">
                 <div class="filter-buttons__wrapper">
                   <button class="filter-buttons__button button" type="button">Применить фильтр</button>
-                  <button class="filter-buttons__button button button--secondary" type="button">Сбросить фильтр</button>
+                  <button class="filter-buttons__button button button--secondary" disabled type="button">Сбросить фильтр</button>
                 </div>
               </fieldset>
             </div>
@@ -498,6 +498,9 @@
 
         <div class="catalog__pagination catalog-pagination">
           <a class="catalog-pagination__link catalog-pagination__link--page-prev" href="">
+            <svg class="catalog-pagination__icon catalog-pagination__icon--prev" width="6" height="10">
+              <use xlink:href="img/sprite.svg#icon-prev"></use>
+            </svg>
             <span>Назад</span></a>
           <ol class="catalog-pagination__list">
             <li class="catalog-pagination__item">
@@ -511,6 +514,9 @@
             </li>
           </ol>
           <a class="catalog-pagination__link catalog-pagination__link--page-next" href="">
+            <svg class="catalog-pagination__icon catalog-pagination__icon--next" width="6" height="10">
+              <use xlink:href="img/sprite.svg#icon-next"></use>
+            </svg>
             <span>Вперед</span>
           </a>
         </div>

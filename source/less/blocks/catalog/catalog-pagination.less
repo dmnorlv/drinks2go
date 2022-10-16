@@ -1,6 +1,5 @@
 .catalog-pagination__link {
   .normalize-link();
-  // font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #7859cf;
@@ -12,11 +11,11 @@
   padding: 8px;
 }
 
-.catalog-pagination__link--page-prev {
-  @media (max-width: @mobile-width-only) {
-    background-image: url("../img/catalog/icon-pagination-prev.svg");
-  }
+.catalog-pagination__icon {
+  fill: #7859cf;
+}
 
+.catalog-pagination__link--page-prev {
   @media (min-width: @tablet-width) {
     font-size: 14px;
     line-height: 22px;
@@ -26,10 +25,6 @@
 }
 
 .catalog-pagination__link--page-next {
-  @media (max-width: @mobile-width-only) {
-    background-image: url("../img/catalog/icon-pagination-next.svg");
-  }
-
   @media (min-width: @tablet-width) {
     font-size: 14px;
     line-height: 22px;
