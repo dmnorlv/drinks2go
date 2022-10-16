@@ -1,8 +1,20 @@
 .page {
   height: 100%;
   font-family: "Montserrat", sans-serif;
+  overflow-y: scroll;
+}
+
+:root {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+:root .page__body {
+  position: absolute;
 }
 
 .page__body {
   margin: 0;
+  width: 100vw;
+  overflow: hidden;
 }
